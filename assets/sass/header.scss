@@ -1,0 +1,245 @@
+.header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: var(--secondary);
+    z-index: 5;
+    > div {
+        width: 100%;
+        position: relative;
+        .menu {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            right: -100vw;
+            background-color: var(--primary);
+            justify-content: center;
+            align-items: flex-start;
+            outline: none;
+            transition: all .3s cubic-bezier(0.52, 0.16, 0.24, 1);
+            z-index: 5;
+            .close-menu {
+                position: absolute;
+                top: 32px;
+                right: 36px;
+                height: 28px;
+                width: 28px;
+                cursor: pointer;
+                svg {
+                    width: 100%;
+                    fill: var(--soft-black);
+                }
+            }
+            .menu-wrap {
+                width: 210px;
+                height: 300px;
+                padding: 0;
+                margin: 0;
+                margin-top: 80px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                > div {
+                    a {
+                        text-decoration: none;
+                        color: var(--black);
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: var(--other);
+                        }
+                    }
+                }
+            }
+        }
+        .open-menu {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            svg {
+                width: 40px;
+                fill: var(--primary);
+            }
+        }
+        .logo {
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            a {
+                flex-direction: row;
+                text-decoration: none;
+                img {
+                    width: 50px;
+                    margin-right: 10px;
+                }
+                .logo-text {
+                    flex-direction: column;
+                    span {
+                        font-size: 24px;
+                        line-height: 24px;
+                        letter-spacing: 1px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#header-home {
+    position: absolute;
+    z-index: 5;
+    background-color: initial;
+}
+
+.menu-open {
+    > div {
+        .menu {
+            right: 0;
+        }
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+  
+.skip-link:focus {
+top: 0;
+}
+
+@media (max-width: 320px) {
+    .header {
+        > div {
+            .logo {
+                a {
+                    .logo-text {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .menu {
+                .close-menu {
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+            .open-menu {
+                top: 25px;
+                right: 15px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 850px) {
+    .header {
+        > div {
+            margin: 0 50px;
+            .menu {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                right: initial;
+                background-color: initial;
+                margin-right: var(--space-mobile);
+                align-items: center;
+                .close-menu {
+                    display: none;
+                }
+                .menu-wrap {
+                    width: 450px;
+                    height: initial;
+                    padding: 0;
+                    margin: 0;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    > div{
+                        justify-content: space-between;
+                        a {
+                            text-decoration: none;
+                            color: var(--white);
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .open-menu {
+                display: none;
+            }
+            .logo {
+                width: 350px;
+                position: relative;
+                left: 0;
+                top: 0;
+                a {
+                    position: absolute;
+                    top: 30px;
+                    left: calc(50% - 60px);
+                    img {
+                        width: 50px;
+                    }
+                    .logo-text {
+                        span {
+                            font-size: 24px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        > div {
+            .menu {
+                .menu-wrap {
+                    >div {
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .logo {
+                width: 600px;
+                a {
+                    left: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    .header {
+        > div {
+            margin: 0 auto;
+            width: 1200px;
+            align-items: center;
+            .logo {
+                a {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

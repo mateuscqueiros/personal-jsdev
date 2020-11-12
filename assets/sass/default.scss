@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, div, nav, button, figure, picture, form, a {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+
+.text {
+    flex-direction: column;
+    .title {
+        flex-direction: column;
+        position: relative;
+        font-size: 2rem;
+        h2 {
+            font-weight: 600;
+            font-size: 1em;
+            color: var(--dark-blue);
+            margin-top: .7em;
+            margin-bottom: .5em;
+        }
+        hr {
+            width: 1.5em;
+            height: .1em;
+            position: absolute;
+            background-color: var(--complement);
+            left: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    }
+    .intro {
+        color: var(--dark-blue);
+        p {
+            font-size: 1em;
+        }
+    }
+}
