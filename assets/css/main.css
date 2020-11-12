@@ -262,6 +262,10 @@ body {
     align-items: center;
   }
   .header > div .logo a {
+    position: initial;
+  }
+
+  #header-home > div .logo a {
     top: 0;
   }
 }
@@ -721,6 +725,9 @@ body {
     margin: 30px auto;
   }
 }
+#contact {
+  margin-bottom: 30px;
+}
 #contact > .wrapper {
   flex-direction: column;
   margin: 0 30px;
@@ -872,6 +879,9 @@ body {
     max-width: 1200px;
   }
 }
+#about {
+  margin-bottom: 30px;
+}
 #about .wrapper {
   flex-direction: column;
 }
@@ -979,6 +989,12 @@ body {
     margin: 0 auto;
     max-width: 1200px;
   }
+  #about .wrapper .hero {
+    margin: 0;
+  }
+}
+#confirmation {
+  margin-bottom: 30px;
 }
 #confirmation .wrapper {
   align-items: center;
