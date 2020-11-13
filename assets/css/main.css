@@ -688,6 +688,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 #services > .wrapper .services .item {
+  text-decoration: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
