@@ -696,7 +696,7 @@ body {
   background-color: var(--secondary);
 }
 #services > .wrapper .services .item .icon {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 #services > .wrapper .services .item .icon img {
   width: 100%;
@@ -842,7 +842,11 @@ body {
   background-color: #fc1024;
 }
 #contact > .wrapper .wrap-img {
-  display: none;
+  width: 100%;
+  margin-top: 50px;
+}
+#contact > .wrapper .wrap-img img {
+  width: 100%;
 }
 
 @media (min-width: 850px) {
@@ -888,28 +892,6 @@ body {
 #about .wrapper .text {
   flex-direction: column;
 }
-#about .wrapper .text .title {
-  flex-direction: column;
-  position: relative;
-}
-#about .wrapper .text .title h2 {
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--dark-blue);
-  margin: 0;
-  margin-bottom: 20px;
-}
-#about .wrapper .text .title hr {
-  width: 50px;
-  height: 5px;
-  position: absolute;
-  background-color: var(--complement);
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 #about .wrapper .text .intro {
   color: var(--dark-blue);
   font-size: 20px;
@@ -920,12 +902,6 @@ body {
 }
 #about .wrapper #prime-hero {
   margin-top: 50px;
-}
-#about .wrapper #second-hero {
-  margin-top: 30px;
-}
-#about .wrapper #third-hero {
-  margin-top: 30px;
 }
 #about .wrapper #third-hero .text .intro.image {
   flex-direction: column;
@@ -1083,6 +1059,45 @@ body {
 @media (min-width: 36rem) {
   #confirmation .wrapper .inner-wrapper {
     margin: 0 100px;
+  }
+}
+#error {
+  height: 60vh;
+}
+#error .wrapper {
+  flex-direction: column;
+  margin: 30px;
+}
+#error .wrapper a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+#error .wrapper .text .intro p a {
+  display: inline;
+}
+#error .wrapper > div .number {
+  margin: 0;
+  font-size: 150px;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+@media (min-width: 850px) {
+  #error .wrapper {
+    margin: 0 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #error .wrapper {
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #error .wrapper .text .intro {
+    justify-content: center;
+  }
+  #error .wrapper .text .intro p {
+    text-align: center;
   }
 }
 

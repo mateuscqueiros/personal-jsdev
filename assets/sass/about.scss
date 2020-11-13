@@ -4,28 +4,6 @@
         flex-direction: column;
         .text {
             flex-direction: column;
-            .title {
-                flex-direction: column;
-                position: relative;
-                h2 {
-                    font-size: 32px;
-                    font-weight: 600;
-                    color: var(--dark-blue);
-                    margin: 0;
-                    margin-bottom: 20px;
-                }
-                hr {
-                    width: 50px;
-                    height: 5px;
-                    position: absolute;
-                    background-color: var(--complement);
-                    left: 0;
-                    bottom: 0;
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                }
-            }
             .intro {
                 color: var(--dark-blue);
                 font-size: 20px;
@@ -38,11 +16,7 @@
         #prime-hero {
             margin-top: 50px;
         }
-        #second-hero {
-            margin-top: 30px;
-        }
         #third-hero {
-            margin-top: 30px;
             .text {
                 .intro.image {
                     flex-direction: column;
