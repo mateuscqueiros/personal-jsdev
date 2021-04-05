@@ -2,30 +2,12 @@
 <html lang="pt-br">
 
 <head>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/assets/images/unreal-logo.svg" type="image/x-icon">
-        <meta property="description"
-            content="Os engenheiros mais famosos por todo o mundo. Todos aqui na Unreal Enginners.">
-        <meta property="description"
-            content="Os engenheiros mais famosos por todo o mundo. Todos aqui na Unreal Enginners.">
-        <meta property="og:description"
-            content="Os engenheiros mais famosos por todo o mundo. Todos aqui na Unreal Enginners.">
-        <meta property="og:image" content="https://www.gameanim.com/wp-content/uploads/2016/10/unreal_logo.jpg">
-        <meta property="og:image:type" content="image/jpg">
-        <meta property="og:image:width" content="800">
-        <meta property="og:image:height" content="600">
-        <meta property="og:title" content="Erro">
-        <meta property="og:site_name" content="Unreal Engineers">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://unrealengineers.github.io">
-        <meta property="og:locale" content="pt_BR">
-        <title>Unreal Engineers</title>
-        <link rel="preload" href="assets/css/main.css" as="style" />
-        <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/unreal-logo.svg" type="image/x-icon">
+    <title>Unreal Engineers</title>
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 </head>
 
 <body>
@@ -75,22 +57,52 @@
         </div>
     </header>
 
-    <main class="page" id="error">
+    <main class="page" id="confirmation">
         <div class="wrapper">
-            <div class="text">
-                <div class="title">
-                    <h2>Sorry this page could not be loaded</h2>
+            <div class="inner-wrapper">
+                <div class="text">
+                    <div class="head">
+                        <h1>Thank you for your order</h1>
+                        <span class="number">Order #001</span>
+                        <span class="date">Placed on 10/11/2020</span>
+                        <hr>
+                    </div>
+                    <div class="syn">
+                        <h2>Order confirmation details</h2>
+                        <div class="field">
+                            <h3>Name</h3>
+                            <p>Mateus C. Queirós</p>
+                        </div>
+                        <div class="field">
+                            <h3>Email</h3>
+                            <p>mateuscqueiros1@gmail.com</p>
+                        </div>
+                        <div class="field">
+                            <h3>Phone Number</h3>
+                            <p>044 99123456</p>
+                        </div>
+                        <div class="field">
+                            <h3>Details</h3>
+                            <p>Cras a porttitor urna. Fusce interdum sodales eros id vestibulum. Praesent vestibulum
+                                libero et quam porttitor ullamcorper. In blandit turpis in mi dapibus, feugiat
+                                sollicitudin
+                                libero lobortis. Ut lacinia consequat eros dictum condimentum. Suspendisse ornare
+                                vehicula
+                                nibh, vehicula elementum nibh porttitor sit amet. Donec dapibus tempor bibendum. Mauris
+                                vitae
+                                semper sem. </p>
+                        </div>
+                        <hr>
+                    </div>
                 </div>
-                <div class="intro">
-                    <p>
-                        But you can go back to the <a href="index.html">Home page</a>
-                    </p>
-                </div>
-            </div>
-            <div>
-                <p class="number">
-                    404
-                </p>
+                <a class="wrapper-home" href="index.html">
+                    <div class="home">
+                        <span class="arrow">
+                            <img src="/assets/images/right-arrow.svg" alt="Arrow">
+                        </span>
+                        <span class="text">go to home page</span>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
@@ -163,8 +175,7 @@
         </div>
     </footer>
 
-
-    <script src="/assets/scripts/index.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

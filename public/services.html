@@ -15,7 +15,7 @@
         <meta property="og:image:type" content="image/jpg">
         <meta property="og:image:width" content="800">
         <meta property="og:image:height" content="600">
-        <meta property="og:title" content="Get in touch">
+        <meta property="og:title" content="Our services">
         <meta property="og:site_name" content="Unreal Engineers">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://unrealengineers.github.io">
@@ -73,43 +73,50 @@
         </div>
     </header>
 
-    <main class="page" id="contact">
-        <div class="wrapper">
-            <div class="wrap-text-form">
-                <div class="text">
-                    <div class="title">
-                        <h2>Contact</h2>
-                        <hr />
-                    </div>
-                    <div class="intro">
-                        <p>
-                            Schedule a meeting with us and receive all the benefits of Unreal.</p>
-                    </div>
+    <main class="page" id="services">
+        <section class="wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta malesuada metus, et eleifend
+                purus efficitur ut. Etiam et tortor dapibus magna pellentesque euismod. Etiam nibh velit, vulputate vel
+                eleifend eget, fermentum a odio. Duis venenatis ipsum ex, at gravida mi euismod ut. Duis fermentum nunc
+                eget quam porttitor tempor. Vestibulum vitae leo velit. Vestibulum auctor ipsum dui, non ornare nisi
+                dapibus non. Maecenas dictum felis et justo accumsan lacinia. Donec consequat luctus arcu, a condimentum
+                turpis. Quisque vehicula vel lacus non accumsan.</p>
+
+            <div class="text">
+                <div class="title">
+                    <h2>Our Projects</h2>
+                    <hr />
                 </div>
-                <form action="success.html">
-                    <div class="field">
-                        <input name="email" id="email" type="text">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="field">
-                        <input name="name" id="name" type="text">
-                        <label for="name">Full name</label>
-                    </div>
-                    <div class="field">
-                        <input name="phone" id="phone" type="tel">
-                        <label for="phone">Phone number</label>
-                    </div>
-                    <div class="field">
-                        <textarea name="description" id="desc" cols="100" rows="5"></textarea>
-                        <label for="description">Description</label>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
+                <div class="intro">
+                    <p>
+                        Choose the service you would like and then go to contact page. Our team will contact you
+                        soon.
+                    </p>
+                </div>
             </div>
-            <div class="wrap-img">
-                <img src="https://source.unsplash.com/collection/260293" alt="Buildings">
+
+            <div class="services">
+                <a href="contact.html" class="item">
+                    <div class="icon">
+                        <img src="/assets/images/analytics.svg" alt="Análises">
+                    </div>
+                    <div class="title">Analytics</div>
+                </a>
+                <a href="services.html" class="item">
+                    <div class="icon">
+                        <img src="/assets/images/excavator.svg" alt="">
+                    </div>
+                    <div class="title">Execution</div>
+                </a>
+                <a href="services.html" class="item">
+                    <div class="icon">
+                        <img src="/assets/images/crane.svg" alt="Installation">
+                    </div>
+                    <div class="title">Installation</div>
+                </a>
+
             </div>
-        </div>
+        </section>
     </main>
 
     <footer id="footer">
@@ -180,8 +187,7 @@
         </div>
     </footer>
 
-
-    <script src="/assets/scripts/index.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

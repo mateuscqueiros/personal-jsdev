@@ -1,0 +1,12 @@
+@use 'form.scss' as f;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 2rem;
+}
